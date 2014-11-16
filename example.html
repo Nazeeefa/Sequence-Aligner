@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-tour.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style_sa.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -48,15 +49,27 @@
     </nav>
 
     <div class="container">
-        <div class="span12">
-            <h3>Example Input</h3>
+	<hr />
+	    <div class="span12">
+			<a href="#" id="starttour" class="btn btn-success btn-large">Show Me</a>
+		</div>
+	    <div class="span12">
+            <h4 id="step1">Input</h4>
+			<div class="form-group">
+			  <label for="comment">Enter or paste a set of sequences:</label>
+			  <textarea class="form-control" rows="7" id="seqinput">>18872_19324_1_D_mel -----------------------------------APESIWEDDKTFDVGDIKTTVEFFY TLFDTQLIHLMARQTDIYSLQEHGIELKCTDEEIKRYIGILLYFGVLKLPQFRMAWSKDL KITAITDSMPRGRFKKIKQCLHFNDNAKQLKKGDCNYDKLYKIRPLLRILKENFGK---- TNAGRASKCR >1128_1580_1_D_mel -----------------------------------APESIWEDDKTFDVGDIKTTVEFFY TLFDTQLIHLMARQTDIYSLQEHGIELKCTDEEIKRYIGILLYFGVLKLPQFRMAWSKDL KITAITDSMPRGRFKKIKQCLHFNDNAKQLKKGDCNYDKLYKIRPLLRILKENFGK---- TNAGRASKCR >1392_1853_1_D_sech ----------------SCLEKIDPKTLKSRTRTFVAPESIWKDDKTFDV------VEFFY TFFETQLIHLMARQTDIYSLQEHGIQLKCTDEEIKRYIGILLYLGVLKVPQLRMACSKDL KLTAITDSMPRGRFEKIKQCLHFNDNAKQLKKGDSNYDKLYKIRPLLKILKEHFGK---- ---------- >24814_25383_1_D_mel NTVIEGCEPDYCVVVDSCLEKIDPKTLKW*TRPFVVPESIWEDDKTFDVGEIKTPVEFFY TFFDTQLIHLMARQTDIYSLQEHCIELKCTDEEIKRYMGILLYLGVLKLPQLRMAWSKDL *LTAITDSMYVGDLKK*NNAYISTTKPNN*KKGDSNYDKLYKIRPLLRILKENFGKLLQE EHFGEIGRCR>
+			  </textarea>
+			</div>
+			<div>
+				<a href="#" class="btn btn-info btn-lg" id="runcode">Submit</a>
+			</div>
+			<h4 id="step3">Example Output</h4>
+			<div class="form-group">
+			  <label for="comment">Copy aligned sequences:</label>
+			  <pre id="seqoutput" xml:space="preserve"></pre>
+			</div>
+				
         </div>
-        <div id="stats"></div>
-        <div id="headtext"></div>
-        <div id="debug"></div>
-        <div id="input">>18872_19324_1_D_mel -----------------------------------APESIWEDDKTFDVGDIKTTVEFFY TLFDTQLIHLMARQTDIYSLQEHGIELKCTDEEIKRYIGILLYFGVLKLPQFRMAWSKDL KITAITDSMPRGRFKKIKQCLHFNDNAKQLKKGDCNYDKLYKIRPLLRILKENFGK---- TNAGRASKCR >1128_1580_1_D_mel -----------------------------------APESIWEDDKTFDVGDIKTTVEFFY TLFDTQLIHLMARQTDIYSLQEHGIELKCTDEEIKRYIGILLYFGVLKLPQFRMAWSKDL KITAITDSMPRGRFKKIKQCLHFNDNAKQLKKGDCNYDKLYKIRPLLRILKENFGK---- TNAGRASKCR >1392_1853_1_D_sech ----------------SCLEKIDPKTLKSRTRTFVAPESIWKDDKTFDV------VEFFY TFFETQLIHLMARQTDIYSLQEHGIQLKCTDEEIKRYIGILLYLGVLKVPQLRMACSKDL KLTAITDSMPRGRFEKIKQCLHFNDNAKQLKKGDSNYDKLYKIRPLLKILKEHFGK---- ---------- >24814_25383_1_D_mel NTVIEGCEPDYCVVVDSCLEKIDPKTLKW*TRPFVVPESIWEDDKTFDVGEIKTPVEFFY TFFDTQLIHLMARQTDIYSLQEHCIELKCTDEEIKRYMGILLYLGVLKLPQLRMAWSKDL *LTAITDSMYVGDLKK*NNAYISTTKPNN*KKGDSNYDKLYKIRPLLRILKENFGKLLQE EHFGEIGRCR></div>
-        <hr />
-        <div id="output"></div>
         </div>
       </div>
     </div><!-- /.container -->
@@ -67,6 +80,9 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
+		<script src="js/bootstrap-tour.js"></script>
+		<script src="js/example_sa.js"></script>
+		
         
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
