@@ -2,6 +2,9 @@ $(window).load(function(){
 	$("#runcode").on("click",function(){
 		runsacode();
 	});
+		$("#resetcode").on("click",function(){
+	$("#seqinput").val("");
+	});
 	
 	//Tour Options
 	var satour = new Tour();
