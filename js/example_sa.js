@@ -4,8 +4,8 @@ $(window).load(function(){
 	});
 	
 	//Tour Options
-	var satour = new Tour({
-	steps: [
+	var satour = new Tour();
+	satour.addSteps([
 	  {
 		element: "#step1",
 		title: "Paste Input Here",
@@ -16,14 +16,14 @@ $(window).load(function(){
 		title: "Get your output",
 		content: "Copy all content from grey area and then paste it in any text editor for example notepad++"
 	  }
-	]});
-
+	]);
+			// Initialize the tour
+	        satour.init();
 	
 
 	
 	$("#starttour").on("click",function(){
-		// Initialize the tour
-	        satour.init();
+		alert("hello");
 	        // Start the tour
 		satour.start();
 	});
