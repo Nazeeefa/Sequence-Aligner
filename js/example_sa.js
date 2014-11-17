@@ -18,11 +18,13 @@ $(window).load(function(){
 	  }
 	]});
 
-	// Initialize the tour
-	satour.init();
+	
 
-	// Start the tour
+	
 	$("#starttour").on("click",function(){
+		// Initialize the tour
+	        satour.init();
+	        // Start the tour
 		satour.start();
 	});
 
