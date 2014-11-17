@@ -25,7 +25,7 @@ $(window).load(function(){
 	
 
 	
-	$("#starttour").on("click",function(){
+	$("#starttour").click(function(){
 		alert("hello");
 	        // Start the tour
 		satour.start();
