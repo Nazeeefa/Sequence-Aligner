@@ -38,7 +38,9 @@ $(window).load(function(){
 
 var runsacode = function(){
 var characterlength = 0;
-var inptxt = $("#seqinput").val();
+var inptxt = $("#seqinput").val().trim();
+var inplength = inptxt.length;
+
 var sttxt = "Total Length:" + inptxt.length;
 var sequences = inptxt.match(/>/g);
 var nazeefa = 0;
