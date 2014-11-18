@@ -56,7 +56,7 @@
 	    <div class="span12">
             <h4>Example Input</h4>
 			<div data-step="1" data-intro="Step 1: Enter or paste a set of DNA/Protein sequences." class="form-group">
-			  <label for="comment">Enter or paste a set of DNA/Protein sequences:</label>
+			  <label for="comment">FASTA format obtained from MAFFT:</label>
 			  <textarea class ="form-control" rows="7" id ="seqinput">>100_200_1_sequence1 ------------------------------------------------------------ ------------------------------------------------------------ ------------------------------------------------------------ --------------------EERA--FAVEAYFSSGCSVIKTQRVFRNRFN----KAPLA --------FVPDR--KSSVTWVT---TFRRTASATKRRALSQFNRFSNPLGVFKSML*GE DTLYLLREATNDYIAEFWSSRKTPPSRKVGGKPEGRLIGEIWSKLELGY-ARHLVESVPA RLQAVIDVKGGI------PDLSPCDFFLWCFLKSRVHVNRP------------------- ----------------------RTLQD------------------------ >Daphnia_pulicaria_sample1 MPLKADAKKVAQHKAANRNWKECKVWGSVGRQSRADDDSPRPQFQERAIQFAPREPSGPV EAFIDEVHEVQPTSSGSEILDEQNVIE--QPG*SLASNRIL-TLPQRTIRGKNKHCWSTS ---KLGAKKRRAGVPRPVRSPENI----KAVRASILCSPARSKHKHASALELED------ ----LGTHNFQQDGATAH-------------------------------------T*PRL PAGG----FVTDH--ELVAFFGI---QFL------------------------------- ----------------------------------------------IGY-HR-----LPE -----LS-------------------MFW--------EQQP------------------- --------DAGLGLGIIQQAMTRERFKF----------------------- >Trichoplusia_ni_sample10 MG---------------------------------------------------------S SLDDEHILSALLQSDEELVG---------EDSDSEISDHVSEDDVQSDTEISKHIACASP WDDVDPNSDDPDQEPE---RPDPI----RKIRPLVKRLNERYHACRKPPRGQSIDSTRRS RVSALNI-VRSQRGPTRMCRN----------------------------------YYDOL CEGAA---FFTDEIISEIVKWTNAEISLKRRESMTGAT---------------------- -----FRDTNEDEIYAFFGILVMTAVRKDNHMSTDDLFDRSLSMVYVSVMSRDRFDFLIC RLN--MDKKSIRPTLRENDVFTPVRKIWDLFIHQCIQNYTP------------------- ---------------------GAHL---------------TIDEQLLGFRG >c177724_100013_1_fruit_fly ------------------------------------------EIWSKLELGYARHLVESV PARLQAVIDVKGGITKYRKTVYNLEKKKDTNGNLQNLKRSGRKQAMDEREWRRLIGIVDK NPSISPVKLSADSQLMGKKACD------ATIRRGLKEIDIRTYTVRKAPCHKGSARTKFL RDLNVAVLPWPAQSPDLNIIENVW-------SLIKGQRTIDKNRKRDATIEEVKIKAYKA KHLSF*LEYVNKPKEFWNVLWTD-EVAFQFQGSFCKRFMHLRQA*--------------- -----KKQSAVLQVNRFGGGTVMFWWFMSYYGFGDFVPIE----GTLNQ-TR-----YLD ILNEHAFVSGDRLFPISDWILQPLNMVKTKELSVETRSEIV------------------- ---------TKFKSGISTSELAKTYKIC----------------------->
 			  </textarea>
 			</div>
@@ -66,7 +66,7 @@
 			<div  data-step="3" data-intro="Step 3: Click to select all, copy an output, and paste it in any text editor." data-position="top">
 				<h4 id="step3">Example Output - <small style="cursor:pointer;" onclick="javascript:selectText('seqoutput');">Click here to select all then press Ctrl+C (Cmd+C on Mac)</small></h4>
 				<div class="form-group">
-				  <label for="comment">Copy aligned sequences:</label>
+				  <label for="comment">Aligned sequences:</label>
 				  <pre id="seqoutput" xml:space="preserve" style="min-height: 200px;"></pre>
 				</div>
 			</div>
