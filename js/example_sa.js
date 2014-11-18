@@ -5,31 +5,6 @@ $(window).load(function(){
 		$("#resetcode").on("click",function(){
 	$("#seqinput").val("");
 	});
-	
-	//Tour Options
-	var satour = new Tour();
-	satour.addSteps([
-	  {
-		element: "#step1",
-		title: "Paste Input Here",
-		content: "Copy your input and paste here"
-	  },
-	  {
-		element: "#step3",
-		title: "Get your output",
-		content: "Copy all content from grey area and then paste it in any text editor for example notepad++"
-	  }
-	]);
-			// Initialize the tour
-	        satour.init();
-	
-
-	
-	$("#starttour").click(function(){
-		alert("hello");
-	        // Start the tour
-		satour.start();
-	});
 
 });
 
@@ -88,7 +63,8 @@ for (i = 0; i < sequences_list.length; i++) {
     if(sequences_list[i].seqlength>0){
         characterlength=sequences_list[i].seqlength;
 		if($("#seqoutput").html()==""){
-			$("#seqoutput").html(sequences_list.length-1+" "+characterlength+"<br />");
+			$("#seqoutput").text(sequences_list.length-1+" "+characterlength);
+			$("#seqoutput").html($("#seqoutput").text()+"<br />");
 		}
         var outtxt = $("#seqoutput").html();
         $("#seqoutput").html(outtxt + newtitle + sequences_list[i].sequence + "<br />");
@@ -108,4 +84,17 @@ sttxt += ", Sequences:" + sequences.length;
 sttxt += ", Processed:" + nazeefa + ", MaxLength:" + maxlength;
 $("#stats").text(sttxt);
 $("#headtext").text(sequences_list.length-1+" "+characterlength);
+}
+
+function selectText(containerid) {
+    if (document.selection) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(containerid));
+        range.select();
+    } else if (window.getSelection()) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(containerid));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
 }
