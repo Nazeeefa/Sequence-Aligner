@@ -50,19 +50,21 @@
     <div class="container">
         <div class="span12">
 			<h3>How to prepare an input:</h3>
+            <ol>
+                <li>Open your alignment file (obtained from MAFFT) in a text editor, for example: Notepad++ or TextWrangler.</li>
+				<li>Go to Replace and mark ‘Extended’ for search mode (in Notepad++) or ‘Match’ (in TextWrangler).</li>
+				<li>Type /r/n in a 'Find what' field and replace all with a single space. This should remove all line breaks in your input.</li>
+				<li>Make sure your text file meets all the input requirements.</li>
+				<li>Select and copy all, and paste it in the <a href="inputform.html">input form</a>.</li>
+			</ol>
+            <h3>Input Requirements</h3>
             <ul>
-                <li>Open your alignment file in a text editor, for example: Notepad++ or TextWrangler</li>
-				<li>Go to Replace and mark ‘Extended’ for search mode (in Notepad++) or ‘Match’ (in TextWrangler)</li>
-				<li>Type /r/n in a 'Find what' field and replace all with space</li>
-				<li>Select, copy all, and paste it in the <a href="inputform.html">input form</a></li>
-				<li> Add > at the end of your input</li>
-			</ul>
-            <h3>Requirements</h3>
-            <ul>
-                <li>Input must be in a FASTA/Pearson format</li>
-				<li>Characters in a set of DNA/Protein sequences must be in capital letters</li>
-                <li>Dash symbols "-" in labels/titles must be replaced with underscores _ before submitting an input</li>
-                <li>Line breaks (/r/n) must be replaced with spaces before submitting an input</li>
+                <li>Input must be in a FASTA/Pearson format.</li>
+				<li>Input must begin and end with > symbol.</li>
+				<li>First ten characters of each title must include characters other than capital letters, hyphen (-), and asterisk (*).</li>
+				<li>First ten characters of each sequence must include: capital letters, hyphen (-), and asterisk (*) ONLY.</li>
+                <li>Dash symbols "-" in labels/titles can be replaced with underscores _ before submitting an input.</li>
+                <li>Line breaks (/r, /n or /r/n) must be replaced with a single space before submitting an input.</li>
             </ul>
 			  <p><a class="btn btn-primary btn-lg" href="example.html" role="button">Try Now</a> <a class="btn btn-success btn-lg" href="inputform.html" role="button">Get Going</a></p>
         </div>
