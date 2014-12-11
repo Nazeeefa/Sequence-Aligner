@@ -1,6 +1,6 @@
 ﻿FASTA to PHYLIP sequence converter
 -----------------
-A text alignment tool that reads an input in a FASTA/Pearson sequence format, and converts it to a relaxed Phylip (sequential/non-interleaved) format. Visit the <a target="_blank" href="http://aligner.azurewebsites.net/">website</a> to try it out!
+A text alignment tool that reads an input in a FASTA/Pearson sequence format, and converts it to a relaxed (sequential/non-interleaved) PHYLIP format. Visit the <a target="_blank" href="http://aligner.azurewebsites.net/">website</a> to try it out!
 
 Contact
 -----------------
