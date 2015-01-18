@@ -65,14 +65,17 @@
 			</div>
 			<div  data-step="3" data-intro="Step 3: Click to select all, copy an output, and paste it in any text editor." data-position="top">
 				<h4 id="step3">Example Output - <small style="cursor:pointer;" onclick="javascript:selectText('seqoutput');">Click here to select all then press Ctrl+C (Cmd+C on Mac)</small></h4>
+				<div class=form-group">
+				   <label for="stats">Sequence Information:</label>
+				   <div id="svgcontainer"><button class="btn btn-info btn-xs">Remove 100% only</button> | <button class="btn btn-info btn-xs">Remove 80% or more</button></div>
+				</div>
 				<div class="form-group">
 				  <label for="comment">Aligned sequences:</label>
 				  <pre id="seqoutput" xml:space="preserve" style="min-height: 200px;"></pre>
 				</div>
 			</div>
         </div>
-		<div id="svgcontainer">
-        </div>
+		
       </div>
     </div><!-- /.container -->
         

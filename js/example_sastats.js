@@ -74,10 +74,17 @@ for (i = 0; i < sequences_list.length; i++) {
 		svgContainer.append("circle").attr('data-col','c0').attr('data-row','r'+i+1).attr('cx',20).attr('cy',20+(i*15)).attr('r',4).attr('fill','blue');
 		for(k=0;k<sequences_list[i].seqlength;k++)
 		{
-			var svgc= svgContainer.append("text").attr('data-col','c'+(k+1)).attr('data-row','r'+(i+1)).attr('x',33+(k*15)).attr('y',40+(i*15)).attr('fill','green').text(sequences_list[i].sequence[k]);
+			var svgc= svgContainer.append("text")
+			.attr('data-col','c'+(k+1))
+			.attr('data-row','r'+(i+1))
+			.attr('x',33+(k*15)).attr('y',40+(i*15))
+			.attr('fill','green')
+			.attr('style','font-size:0.6em;')
+			.text(sequences_list[i].sequence[k]);
 			if(sequences_list[i].sequence[k]=='-')
 			{
-				svgc.attr('fill','red');
+				svgc.attr('fill','red')
+				.attr('style','font-size:0.9em;');
 			}
 		}
 	//SVG End
