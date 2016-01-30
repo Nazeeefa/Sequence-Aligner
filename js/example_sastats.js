@@ -112,7 +112,7 @@ for (i = 0; i < sequences_list.length; i++) {
         "<br/>";
 }
 //Get colour range for 1-100;
-var percentagecolour=d3.scale.linear().domain([0,50,100]).range(["green","orange","red"]);
+var percentagecolour=d3.scale.linear().domain([0,70,75,100]).range(["blue","blue","orange","red"]);
 //update column headers
 for (i=0;i<maxseqlength;i++)
 	{
