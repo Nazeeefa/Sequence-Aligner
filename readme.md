@@ -8,5 +8,3 @@ Contact
 Feel free to send your feedback via <a target="_blank" href="http://www.twitter.com/NazeefaFatima">Twitter</a> or <a target="_blank" href="http://aligner.azurewebsites.net/feedback.html">feedback form</a>.
 
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-
-[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
